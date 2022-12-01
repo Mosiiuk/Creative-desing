@@ -1,3 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&family=Open+Sans&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-top: 38px;
+}
+.header .header-inner {
+  max-width: 1920px;
+  margin: 0 25px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header .header-inner .logo {
+  width: 50px;
+  height: 50px;
+}
+.header .header-inner .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-inner .nav .social {
+  margin-left: 30px;
+}
+.header .header-inner .nav .social .nav-link {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.header .header-inner .nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.intro {
+  background: url(../img/backing.png) center no-repeat;
+  height: 100vh;
+  width: 100%;
+  min-height: 600px;
+}
+.intro .intro-inner {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 100px;
+}
+.intro .intro-inner .intro-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 120px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.intro .intro-inner .intro-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  letter-spacing: 1em;
+  text-transform: uppercase;
+}
+.intro .intro-inner .scroll-down {
+  text-align: center;
+  position: absolute;
+  bottom: 1%;
+}
+.intro .intro-inner .scroll-down .scroll {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.intro .intro-inner .scroll-down > img {
+  width: 40px;
+  height: 40px;
+}
+
+.about {
+  width: 100%;
+  background-color: #240000;
+  position: relative;
+  height: 100vh;
+  min-height: 1080px;
+}
+.about .w-logo {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 240px;
+  line-height: 200px;
+  position: absolute;
+  color: #460000;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-inner {
+  display: flex;
+  flex-direction: column;
+}
+.about .about-inner .about-title {
+  margin-top: 255px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  z-index: 4;
+}
+.about .about-inner .about-blocks {
+  display: flex;
+  margin-top: 195px;
+  justify-content: center;
+  padding-bottom: 170px;
+}
+.about .about-inner .about-blocks .about-block {
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin: 0 15px;
+}
+.about .about-inner .about-blocks .about-block .block-img {
+  background-color: #460000;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-inner .about-blocks .about-block .block-img > img {
+  width: 60px;
+  height: 60px;
+}
+.about .about-inner .about-blocks .about-block .block-title {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.about .about-inner .about-blocks .about-block .block-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.feedback {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bgform.png) no-repeat bottom center;
+}
+.feedback .feedback-inner {
+  z-index: 3;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.feedback .feedback-inner .feedback-title {
+  padding-top: 240px;
+}
+.feedback .feedback-inner .inputs-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.feedback .feedback-inner .input-form {
+  width: 33%;
+  padding: 13px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  margin: 0 15px;
+}
+.feedback .feedback-inner .input-message {
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+}
+.feedback .feedback-inner .submit {
+  background-color: #BD0000;
+  text-transform: uppercase;
+  padding: 18px 116px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  margin: 60px auto 130px;
+}
+
+footer {
+  background: #111111;
+  width: 100%;
+}
+footer .fotter-inner {
+  max-width: 1920px;
+  margin: 0 25px;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .fotter-inner .info {
+  display: flex;
+  align-items: center;
+}
+footer .fotter-inner .info.logo {
+  width: 50px;
+  height: 50px;
+}
+footer .fotter-inner .info .firm {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #CCCCCC;
+  margin-left: 60px;
+}
+footer .fotter-inner .documents > a {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: #CCCCCC;
+  margin: 0 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
