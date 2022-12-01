@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons.eot?yi1mqh");
-  src: url("../fonts/icons.eot?yi1mqh#iefix") format("embedded-opentype"),
-    url("../fonts/icons.ttf?yi1mqh") format("truetype"),
-    url("../fonts/icons.woff?yi1mqh") format("woff"),
-    url("../fonts/icons.svg?yi1mqh#icons") format("svg");
+  src: url("../fonts/icons.eot?sizabp");
+  src: url("../fonts/icons.eot?sizabp#iefix") format("embedded-opentype"),
+    url("../fonts/icons.ttf?sizabp") format("truetype"),
+    url("../fonts/icons.woff?sizabp") format("woff"),
+    url("../fonts/icons.svg?sizabp#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -40,4 +40,10 @@
 }
 .icon-skype:before {
   content: "\f17e";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cross:before {
+  content: "\ea0f";
 }

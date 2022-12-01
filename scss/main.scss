@@ -15,6 +15,7 @@ $maxWidth: 1920px;
 $marginBlock: 0 25px;
 
 
+
 .header {
     width: 100%;
     position: absolute;
@@ -23,6 +24,7 @@ $marginBlock: 0 25px;
     left: 0;
     z-index: 1000;
     padding-top: 38px;
+    
     & .header-inner {
         max-width: $maxWidth;
         margin: $marginBlock;
@@ -59,6 +61,31 @@ $marginBlock: 0 25px;
             margin-right: 30px;
             };
     };
+}
+// .hamburger{
+//     position: fixed;
+//     z-index: 100;
+//     top: 1rem;
+//     right: 1rem;
+//     padding: 4px;
+//     background-color: $bg2c;   
+//     cursor: pointer;
+//     border: none;
+//     color: #fff;
+//     font-size: 20px;
+//     & .closeIcon{
+//         display: none;
+//     }
+
+// }
+.fixed {
+    background-color: $bgc1;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
 }
 .intro {
     background: url(../img/backing.png) center no-repeat;
@@ -204,14 +231,16 @@ $marginBlock: 0 25px;
         text-align: center;
         text-transform: uppercase;            
         color: $main;
-        
+        display: flex;
+        flex-direction: column;
+        max-width: $maxWidth;
+        margin: $marginBlock;
         & .feedback-title{
             padding-top: 240px;
         }            
         & .inputs-contact{            
-            width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             margin-top: 70px;            
         }
         & .input-form{
@@ -226,7 +255,6 @@ $marginBlock: 0 25px;
 
             background: none;
             border: 1px solid $main;
-            margin: 0 15px;                
         }
         & .input-message{
             margin-top: 30px;
@@ -289,3 +317,16 @@ footer{
     }
 
 }
+/* Звичайний екран */
+@media (max-width: 1200px) {
+
+}
+/* Планшет горизонтальний */
+@media (max-width: 990px) {
+    
+}
+/* Планшет вертикальний */
+@media (max-width: 770px) {}
+
+/* Телефон */
+@media (max-width: 575px) {}

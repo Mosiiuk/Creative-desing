@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&family=Open+Sans&display=swap");
 body {
   margin: 0;
@@ -72,6 +73,16 @@ button {
   color: #fff;
   text-transform: uppercase;
   margin-right: 30px;
+}
+
+.fixed {
+  background-color: #BD0000;
+  padding-top: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
 }
 
 .intro {
@@ -212,14 +223,17 @@ button {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 25px;
 }
 .feedback .feedback-inner .feedback-title {
   padding-top: 240px;
 }
 .feedback .feedback-inner .inputs-contact {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 70px;
 }
 .feedback .feedback-inner .input-form {
@@ -232,7 +246,6 @@ button {
   color: #fff;
   background: none;
   border: 1px solid #fff;
-  margin: 0 15px;
 }
 .feedback .feedback-inner .input-message {
   margin-top: 30px;
@@ -289,5 +302,10 @@ footer .fotter-inner .documents > a {
   color: #CCCCCC;
   margin: 0 10px;
 }
+
+/* Звичайний екран */
+/* Планшет горизонтальний */
+/* Планшет вертикальний */
+/* Телефон */
 
 /*# sourceMappingURL=style.css.map */
