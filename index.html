@@ -10,27 +10,32 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header hamburger" id="header">
+    <header class="header" id="header">
       <div class="header-inner">
         <a href="#"><img class="logo" src="./img/LOGO.png" alt="logo" /></a>
-        <nav class="nav">
+        <nav class="nav" id="nav">
           <a href="#" class="nav-link">home</a>
           <a href="#" class="nav-link">page</a>
           <a href="#" class="nav-link">features</a>
           <a href="#" class="nav-link">extensions</a>
           <a href="#" class="nav-link">tutorial</a>
           <a href="#" class="nav-link">contact us</a>
-          <div class="social">
-            <a href="#" class="nav-link icon-facebook"></a>
-            <a href="#" class="nav-link icon-twitter"></a>
-            <a href="#" class="nav-link icon-skype"></a>
-            <a href="#" class="nav-link icon-linkedin"></a>
-          </div>
-          <!-- <button class="hamburger">
-            <span class="closeIcon icon-cross"></span>
-            <span class="menuIcon icon-menu"></span>
-          </button> -->
+          <a href="https://www.facebook.com/" class="nav-link social"></a>
+          <a
+            href="https://twitter.com/?lang=uk"
+            class="nav-link icon-twitter"
+          ></a>
+          <a href="https://www.skype.com/uk/" class="nav-link icon-skype"></a>
+          <a
+            href="https://www.linkedin.com/feed/"
+            class="nav-link icon-linkedin"
+          ></a>
         </nav>
+        <button class="hamburger-lines" id="nav-toggle" type="button">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </button>
       </div>
     </header>
     <!-- Intro -->
@@ -104,11 +109,12 @@
           <input type="email" class="input-form" placeholder="Email" />
           <input type="tel" class="input-form" placeholder="Phone" />
         </div>
-        <input
-          type="text"
-          class="input-form input-message"
+        <textarea
           placeholder="Message"
-        />
+          class="input-form input-message"
+          cols="30"
+          rows="10"
+        ></textarea>
         <button class="submit">Submit</button>
       </div>
     </div>
